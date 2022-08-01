@@ -1,9 +1,1 @@
 change from local machine to github 
-today is Monday
-
-
-
-
-
-
-practicing merge function in Github
