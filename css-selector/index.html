@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.yellow-bg{
+    background-color: yellow;
+    border: 1px solid red;
+    color: black;
+}
+.padding-15{
+    padding: 15px;
+}
+.border{
+    border: 1px solid red;
+}
+span{
+    color: blue;
+    padding: 2px;
+    border: 1px solid red;
+    margin-right: 5px;
+}
+p{
+    box-sizing: content-box;
+    color:orange;
+}
+button{
+    border: 1px solid red; 
+    padding: 5px;
+    color: red;
+    border-radius: 5px;
+}
+.special-para{
+    color: blue;
+}
+#test{
+    color: green;
+}
+
+#whatever{
+    border: 1px solid green;
+}
+
+    </style>
+</head>
+<body>
+    <p class="special-para" id="test" style="color: red;">Style has the highest priority</p>
+    <p class="special-para" id="test">id test has lower priority
+    </p>
+    <p class="special-para">special-para has lower priority</p>
+    <p>paragraph has the lowest priority</p>
+    <p id="whatever">whatever tag - only use an id tag once</p>
+
+    <hr>
+
+    <span>Apple</span><span>Banana</span><span>Mango</span>
+
+    <hr>
+
+    <Button> Abc</Button>
+    <button>Def</button>
+
+    <hr>
+
+    <p class="yellow-bg padding-15 border">
+    Actor Billy Porter wore a black velvet tuxedo dress designed by Christian Siriano on the red carpet of the 91st Academy Awards on February 24, 2019. 
+    At the time, Porter had recently come into public view for his breakout role in the FX television series Pose and had been receiving attention for his 
+    boundary-pushing red carpet attire during the 2018–19 film awards season. 
+</p>
+<p class="padding-15 border">
+    Following his appearance at the 76th Golden Globe Awards in a custom silver 
+    suit with fuchsia-lined cape, he was invited to host red carpet interviews at the upcoming Oscars pre-show. Porter approached Siriano and together they 
+    conceived the tuxedo gown.
+</p>
+<p class="border">
+    Following his appearance at the 76th Golden Globe Awards in a custom silver 
+    suit with fuchsia-lined cape, he was invited to host red carpet interviews at the upcoming Oscars pre-show. Porter approached Siriano and together they 
+    conceived the tuxedo gown.
+
+
+    <div>
+        <p>
+            <ul>
+                <li>
+                    <span class="padding-15 yellow-bg margin">apple</span>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+</p>
+
+
+
+</body>
+</html>

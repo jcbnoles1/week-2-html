@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span{
+        color: red;
+    }
+    p>span{
+        color: green;
+    }
+    div>span{
+        color: blue;
+    }
+    div span{
+        color: yellow;
+    }
+    div{
+        color: brown;
+    }
+    p>span{
+        color: aqua;
+    }
+    div>span{
+        color: blueviolet;
+    }
+</style>
+<body>
+    <div>
+        <span>Apple - span is an immediate child of div - color = blue</span>
+        <span>Pineapple</span>
+</div>
+<div>
+    Tangerine
+</div>
+<p>
+    <ul>
+        <li><span>Kiwi</span></li>
+    </ul>
+    <span>Mango</span>
+    </p>
+
+    <div>
+        <p>
+            <span>Grape - Not an immediate child of div so color is equal to p>span</span> 
+            <br>
+            <br>
+            <span>Blueberry - Is an immediate child of div color = blue</span>
+        </p>
+    </div>
+
+</p>
+<p>Canteloupe</p>
+<span>Orange</span>
+    
+</body>
+</html>

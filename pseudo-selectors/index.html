@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span:hover{
+            border: 1px solid;
+        }
+        a{
+            color: red;
+        }
+        span:hover{
+            border: 1px solid;
+        }
+        a:visited{
+            color: red;
+        }
+        input:focus{
+            color: red;
+        }
+        .login-form{
+            text-align: center;
+        }
+        .login-button{
+            border-radius: 15px;
+            padding: 5px 10px 5px 10px;
+            height: 30px;
+            width: 200px;
+            transition:box-shadow 10s;
+        }
+        .login-button:hover{
+            width: 250px;
+            color: red;
+            border-color: red;
+            box-shadow: 20px 20px 20px 0;
+        }
+        #login-button{
+            width: 100px;
+        }
+        #login-button:hover{
+            width: 150px;
+        }
+        span::before{
+            content: '* ';
+            color: red;
+
+        }
+        span::after{
+            content: '* ';
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <span class="validation-msg">user name is required</span>
+
+    <br>
+
+    <span>user name is required</span>
+
+    <br>
+
+
+    <span>user name is required</span>
+
+    <br>
+    <br>
+    <div class="login-form">
+        <input class="login-button"><br><br>
+        <input class="login-button"><br><br>
+        <button id="login-button" class="login-button"> Login </button>
+        <br>
+        <br>
+    </div>
+    <input class="login-button"> <br>
+    <br>
+    <input class="login-button">
+    <br>
+   <span>something</span>
+   <br>
+    <a href="http://google.com">Go to Google</a>
+    <br>
+    <a href="http://www.wikipedia.org"> Go to Wikipedia </a>
+    <br>
+    <a href="#"> Go to google</a>
+    <br>
+    <a href="http://www.facebook.com"> Go to Facebook</a>
+    <br>
+    <a href="about.html"> About</a>
+   
+</body>
+</html>
