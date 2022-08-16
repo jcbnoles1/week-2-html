@@ -13,9 +13,12 @@ td{
     text-align: center;
     padding: 10px;
     border-bottom: .1px solid lightgray;
-   font-size: 6px;
+    font-size: 5px;
+    font-family: Arial, Helvetica, sans-serif;
   
 }
+
+
 
 .blue {
     color: blue;
@@ -24,10 +27,11 @@ td{
 
 .gray {
     color: rgb(43, 34, 34);
+   
 }
 
 .table {
-    border: 4px gray;
+    border: 4px rgb(253, 250, 250);
     border-spacing: 0;
     
 }
@@ -43,6 +47,7 @@ tr>td:nth-child(5) span:nth-child(1) {
 tr{
    border: 1px solid black;
     font-size: 4px;
+    color: rgb(51, 42, 42);
 }
 
 th {
@@ -51,6 +56,7 @@ th {
     font: black;
     border-spacing: 0;
     font-size: 8px;
+    
 } /* Everything about the table*/
 
 /*.alternate>span:nth-child(odd) {
@@ -73,9 +79,7 @@ tr>td:nth-child(3){
     text-align: left;
 }
 
-.td-contianer {
-    background-color: red;
-}
+
 
     </style>
     
@@ -83,8 +87,13 @@ tr>td:nth-child(3){
 
     <body>
         <table class="table">
-            <tbody>
-                <thead>
+           
+            <thead>
+                <tr>
+                    <th colspan="2">Section 1</th>
+                    <th colspan="4">Section 2</th>
+                </tr>
+                <tr>
                     <th> Session</th>
                     <th> Workshop ID</th>
                     <th> Date & Time</th>
@@ -92,13 +101,13 @@ tr>td:nth-child(3){
                     <th> Session Status</th>
                     <th>  </th>
                 </tr>
-                </thead>
-                
+            </thead>
+            <tbody>
                 <tr>
                     <td>Session 15</td>
                     <td><span class="blue">WDC-V415-11971209 </span> <br> <span class="gray">Full Stack Javascript Developer Bootcamp</span></td>
                     <td><span> 15th Aug, 2022 - 15th Aug, 20222 </span> <br> <span> 11:30 - 13:30 (Asia/Kolkata)</span></td>
-                    <td>21</td>
+                    <td><span>21</span> <br> <span> 0/21 joined</span></td>
                     <td class="yellow">In-Progress</td>
                     <td>Join Now</td>
                 </tr>
@@ -126,7 +135,7 @@ tr>td:nth-child(3){
                     <td class="yellow" >In-Progress</td>
                     <td>Join Now</td>
                 </tr>
-            </tbody>
+            </tbody>  
           
         </table>
     
