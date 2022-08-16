@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    :root {
+        --border-theme-color: red;
+        --common-padding: 10px;
+    
+
+    }
+    .theme-background-color {
+        background-color:var(--border-theme-color);
+    }
+
+    .heading {
+    border: 1px solid black;
+    padding: var(--common-padding);
+    }
+
+    .save-button { 
+    color: red;
+    }
+
+    .save-button:hover {
+        border-color: var(--border-theme-color);
+    }
+
+    .cancel-button {
+    background-color: gray;
+    }
+
+    .container {
+    border: 1px solid var(--border-theme-color);
+    padding: var(--common-padding);
+    border-radius: var(--common-padding);
+    }
+
+  p {
+    border-color: var(--border-theme-color);
+  }
+
+</style>
+
+</head>
+<body>
+    <h2 class="heading theme-background-color container"> User Creation Page</h2>
+    <div class="container">
+        <input placeholder="Add user button"><br><br>
+        <button class="save-button theme-background-color">Save User </button>
+        <button class="cancel-button"> Cancel </button>
+
+    <p> Data entered for example</p>
+
+    </div> 
+    <h2 class="heading theme-background-color container">Product Creation Page</h2>
+    <div class="container">
+        <input placeholder="Add user button"><br><br>
+        <button class="save-button theme-background-color">Save Product </button>
+        <button class="cancel-button">Cancel</button>
+        <p> Date entered for example</p>
+    </div>      
+    
+    
+    <h2 class="heading theme-background-color container" > User Creation Page</h2>
+    <div class="container">
+        <input placeholder="Add user button"><br><br>
+        <button class="save-button theme-background-color">Save </button>
+        <button class="cancel-button"> Cancel </button>
+    <hr>
+</body>
+</html>

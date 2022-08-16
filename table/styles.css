@@ -1,0 +1,50 @@
+td{
+    text-align: center;
+    padding: 5px;
+   /* background-color: orange;*/
+    border-bottom: 1px solid lightgrey;
+    font-size: 16px;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.table {
+    border: 4px gray;
+    border-spacing: 0;
+    
+}
+
+/*tr>td:nth-child(3){
+    color: red;
+}
+
+tr>td:nth-child(5) span:nth-child(1) {
+    color: purple;
+}*/
+
+tr{
+   /*border: 1px solid black;*/
+
+}
+
+th {
+    background-color: antiquewhite;
+    padding: 5px;
+    font: black;
+    border-radius: 5px;
+    
+}
+
+.alternate>span:nth-child(odd) {
+    color: red;
+}
+
+.table>tbody>tr:nth-child(odd) {
+    background-color: lightblue;
+}
