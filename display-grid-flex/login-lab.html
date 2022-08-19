@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+
+       .main-container {
+            background: linear-gradient(to right, green, lightgreen);
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background: linear-gradient(to right,rgb(248, 245, 245), lightgray);
+            height: 300px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-container {
+           padding: 10px;
+           margin: auto;
+            width: 50%;
+            /*border: 3px solid green;*/
+            padding: 10px;
+
+           
+        }
+
+        .login-button {
+            background-color: rgb(104, 182, 104);
+            padding: 10px;
+            width: 168px;
+            color: white;
+            border: 0;
+        }
+
+        .login-button:hover {
+            background-color: darkgreen;
+        }
+        .signin{
+            color: green;
+        }
+
+        .signin:hover {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="login-container">
+            <div class="input">
+                    
+                <div><input type="text" value="name" style="background-color: rgb(247, 247, 247);border: 0; height: 30px; color:rgb(143, 141, 141);">
+                </div>
+                <br>
+                <div><input type="text" value="password" style="background-color: rgb(247, 247, 247); border: 0; height: 30px; color:rgb(143, 141, 141);">
+                </div>
+                <br>
+                <div><input type="text" value="email address" style="background-color: rgb(247, 247, 247); border: 0; height: 30px; color:rgb(143, 141, 141);">
+                </div>
+                <br>
+                <div ><button class="login-button" >CREATE</button></div>
+                <br>
+                <div style="padding-left: 2px; color: gray;"> <span style="font: lightgray;"> Already reistered? </span> <span class="signin"> Sign in</span> </div> 
+                <br>
+           
+
+        </div>
+            
+
+        </div>
+    </div>
+
+  
+   
+    
+</body>
+</html>

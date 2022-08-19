@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  
+    input[type="text"] {
+        outline: none;
+       
+    }
+    input[type="text"][disabled] {
+        border: 1px solid red;
+        cursor: not-allowed;
+    }
+
+    /*p.custom{
+        color: red;
+    }
+
+    p[jon] {
+        color:blue
+    }
+
+    p[sagar]{
+        color: green;
+    }
+
+    p[width="200px"] {
+        color: purple;
+    }*/
+  
+</style>
+
+
+</head>
+
+
+<body>
+    <input type="text" disabled>
+    <br>
+    <br>
+    <input type="text">
+    <br>
+    <br>
+    <input type="password" disabled>
+    <br>
+    <br>
+    <input type="text" disabled>
+    <br>
+    <br>
+
+    
+
+    <p class="custom"> ABC (class = custom)</p>
+    <p> no color</p>
+    <p jon> Jon (attribute jon)</p>
+    <p jon> Jon (attribute jon)</p>
+    <p sagar> Jon (attribute sagar)</p>
+    <p width="200px"> Jon (attribute plus a value)</p>
+    <p wdith="300px"> Jon (attribute  plus a value)</p>
+   
+    <form action="http://facebook.com"> <!-- use post/get to submit to the server-->
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="submit">
+    </form>
+    <br>
+    <form>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="submit">
+    </form>
+    <br>
+
+    <h3>Text Input</h3>
+    <input type="text" maxlength="10"><!--  anything you want stay -->
+    <input type="submit" value="clickme">
+    <input type="reset" value="clickme">
+    <input type="button"value="clickme" >
+    <hr>
+    <h3>Number Input</h3>
+    <input type="number" min="5" max="10" value="5">
+    <hr>
+    <h3> Range Input</h3>
+    <input type="range" min="0" max="100" step="20" value="0">
+    <hr>
+    <h3> Date Input</h3>
+    <input type="date"> 
+    <hr>
+    <h3> Password Input</h3>
+    <input type="password">
+    <br>
+    <h3> File Input</h3>
+    <input type="file">
+    <br>
+    <h3> List of Names</h3>
+        <select>
+                <option>Jon </option>
+                <option>Bill</option>
+                <option>Kevin</option>
+                <option>Roger</option>
+                <option>Jason</option>
+                <option>Marcella</option>
+                <option>Mr. Heisenberg</option>
+                <option>Dude</option>
+
+        </select><!-- words -->
+  
+    <h3> List of Choices</h3>
+        <select multiple>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+
+         </select>
+    <br>
+    <br>
+    <h3> Radio Input</h3>
+        <input name="account-type" type="radio" id="radio-checkbox">
+        <label for="radio-checkbox"> Admin </label>
+    <br>
+        <input name="account-type" type="radio" id="radio-privacy-policy-checkbox">
+        <label for="radio-privacy-policy-checkbox"> Normal </label>
+    <br>
+    <br>
+    <h3> Checkbox Input</h3>
+    <input type="checkbox" id="agree-checkbox"><label for="agree-checkbox"> I agree to the terms of service. </label>
+    <br>
+    <input type="checkbox" id="privacy-policy-checkbox"><label for="privacy-policy-checkbox"> I agree to the terms of privacy </label>
+    <br>
+    <h3> Radio Input</h3>
+        <input name="account-type" type="radio">
+        <label> Basic</label>
+        <input name="account-type" type="radio">
+        <label> Silver </label>
+        <input name="account-type" type="radio">
+        <label> Gold </label>
+        <input name="account-type" type="radio">
+        <label> Platinum </label>
+    <br>
+    
+
+
+    
+</body>
+</html>

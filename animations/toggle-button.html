@@ -5,7 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" cont>
     <style>
-        div{
+
+        /*button:hover {
+            background-color: red;
+            rotate: 180deg;
+        }*/
+
+        .error-message {
+            color: red;
+            position: absolute;
+            animation: blinking 1s; /*infinite linear */
+        }
+
+        /*.error-message:hover{
+            color: red;
+            animation: blinking 5s;
+
+        }*/
+
+        @keyframes blinking {
+            0% {
+                color: red;
+              /*  margin-left: 0;*/
+                
+                font-weight: bold;
+            }
+            }
+            
+            100% {
+                color: blue;
+              /*  margin-left: 100px;*/
+                font-weight: normal;
+                
+            } /* You animate: text size, border, position etc.../*
+        }
+
+        /*.loader {
+            margin-left: 20px;
+            border: 10px solid gray;
+            height: 50px;
+            width: 50px;
+            border-top: 10px solid blue;
+            border-radius: 50%;
+            animation: spin 5s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                rotate: 0;
+                transform: scale(1);
+            }
+            100% {
+                rotate: 360deg;
+                transform: scale(2);
+            }
+        }
+
+       /* div{
             box-sizing: border-box;
         }
 
@@ -28,6 +84,11 @@
             border-radius: 8px;
         }
 
+        .toggle-button-container:hover>.toggle-button {
+            left: 22px;
+        }
+
+
         @keyframes zig-zag {
             0% {
                 left: 2px;
@@ -37,11 +98,31 @@
                 left: 42px;
             }
 
-        }
+        }*/
 
     </style>
 </head>
 <body>
+
+    <button>Click</button>
+    <br>
+    <br>
+
+    <span class="error-message">Required</span>
+    <br>
+    <br>
+
+    
+    <br>
+    <br>
+    
+
+    <div class="loader">
+
+    </div>
+
+    <br>
+    <br>
 
 
     <div class="toggle-button-container">
