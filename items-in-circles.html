@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .container {
+                display: grid;
+                grid-template-areas: "stack";
+            }
+
+            .container > img {
+                --n-angle: calc(-1 * var(--angle));
+                transform: 
+                    rotate(var(--angle))
+                    translateX(150px)
+                    rotate(var(--n-angle));
+            }
+
+            .container > img {
+                grid-area: stack;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: contain;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class=" container">
+        <img src="images/image-blackand white.jpg" style="--angle: 0deg;" alt="click here">
+        <img src="images/image-coastal.jpg" style="--angle: 45deg;" alt="click here">
+        <img src="images/image-oceantopview.jpg" style="--angle: 90deg;" alt="click here">
+        <img src="images/image-wavesbreaking.jpg" style="--angle: 180deg;" alt="click here">
+    </div>
+    
+</body>
+</html>

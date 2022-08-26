@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @import url(
+'https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yaldevi', sans-serif;
+}
+   
+h1 {
+    color: green;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 22px;
+}
+   
+h6 {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+   
+.myProducts-gallery img{
+    height: 92px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: .5;
+}
+   
+.myProducts-gallery img:hover {
+    opacity: 1;
+}
+   
+.myProducts-gallery {
+    float: left;
+}
+   
+.myProducts {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+   
+.image-container img {
+    height: 400px;
+    transition: transform 1s;
+}
+   
+.image-container img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+   
+.image-container {
+    float: right;
+    padding: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1> Welcome</h1>
+    <h6> My favorite beach pictures</h6>
+    <div class="myProducts">
+        <div class="myProducts-gallery">
+            <img src="images/image-blackand white.jpg" alt="click here" onclick="myImageFunction(this)">
+            <img src="images/image-coastal.jpg" alt="click here" onclick="myImageFunction(this)">
+            <img src="images/image-oceantopview.jpg" alt="click here"  onclick="myImageFunction(this)">
+            <img src="images/image-wavesbreaking.jpg" alt="click here"  onclick="myImageFunction(this)">
+        </div>
+        <div class="image-container">
+            <img src="images/pexels-free-jpg-11751212.jpg" alt="click here">
+        </div>
+    </div>
+
+    <script>
+        function myImageFunction(productSmallImg) {
+            var productFullImg = document.getElementById("img-box");
+            productFullImg.src = productSmallImg.src;
+        }
+    </script>
+    
+</body>
+</html>

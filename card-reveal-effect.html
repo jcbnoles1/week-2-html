@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 400px;
+            height: 400px;
+            display: grid;
+            grid-template-rows: minmax(100%, 1fr);
+            grid-template-areas: "stack";
+            overflow: hidden;
+        }
+
+        .cardv > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card > figcaption {
+            grid-area: stack;
+            background-color: #242424e0;
+            transform: translateY(calc(100%-4rem));
+            transition: transform 600ms;
+
+        }
+
+        .card:hover figcaption {
+            transform: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <figure class="card">
+        <img src="images/image-oceantopview.jpg">
+        <figcaption>
+            <h3> .... </h3>
+            <p> .... </p>
+        </figcaption>
+    </figure>
+
+    <figure class="card">
+        <img src="images/image-blackand white.jpg">
+        <figcaption>
+            <h3> .... </h3>
+            <p> .... </p>
+        </figcaption>
+    </figure>
+</body>
+</html>

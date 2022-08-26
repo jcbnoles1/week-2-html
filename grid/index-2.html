@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use this for document layout</title>
+
+<style>
+    .container {
+        display: grid;
+        height: 100vh; /* the screen proportion remains the same when sizing the screen*/
+        width: 100vw;
+        /*height: 400px; 
+        width: 600px;*/
+        background-color: red;
+        grid-template-areas: 
+            "header header header header "
+            "sidebar1  content content content"
+            "sidebar2 content content content"
+            "sidebar3 content content content"
+            "footer footer footer footer ";
+            gap: 5px;
+       
+    }
+
+    .header {
+        background-color: green;
+        grid-area: header;
+        text-align: center;
+    }
+
+    .sidebar1 {
+        background-color: orange;
+        grid-area: sidebar1;
+        width: 150px;
+    }
+
+    .sidebar2 {
+        background-color: orange;
+        grid-area: sidebar2;
+        width: 150px;
+    }
+
+    .sidebar3 {
+        background-color:  orange;
+        grid-area: sidebar3;
+        width: 150px;
+    }
+
+    .content {
+        background-color: purple;
+        grid-area: content;
+        padding: 10px;
+        height: 400px;
+        width: 1200px;
+    }
+
+    .content-1 {
+        background-color: purple;
+        grid-area: content;
+        padding: 10px;
+        height: 400px;
+        width: 800px;
+    }
+
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> 
+            <div> Welcome to Hell</div>
+        </div>
+        <div class="sidebar1"> 
+            <div> information in sidebar</div>
+
+
+        </div>
+        <div class="sidebar2"> 
+            <div> second information</div>
+        </div>
+        <div class="sidebar3"> 
+            <div> third information</div>
+        </div>
+        <div class="content">  Oscar Isaac (born 1979) is an American actor who is credited with contributing to a change in the portrayal of Latinos in Hollywood. 
+            Born in Guatemala, Isaac moved with his family to the United States while an infant. An alumnus of the Juilliard School, Isaac was a character actor 
+            in films for much of the 2000s. After gaining recognition for playing supporting parts in Robin Hood (2010) and Drive (2011), Isaac had his breakthrough 
+            with the eponymous role of a singer in the musical drama Inside Llewyn Davis (2013), which earned him a Golden Globe nomination. He became an international 
+            star with the role of Poe Dameron in the Star Wars sequel trilogy (2015–2019). Isaac was named the best actor of his generation by Vanity Fair in 2017 and
+            one of the 25 greatest actors of the 21st century by The New York Times in 2020. His accolades include a Golden Globe Award, a National Board of Review Award 
+            and an appearance on Time's list of the 100 most influential people in the world in 2016. (Full article...) 
+        </div>
+        <div class="content">
+            Oscar Isaac (born 1979) is an American actor who is credited with contributing to a change in the portrayal of Latinos in Hollywood. 
+            Born in Guatemala, Isaac moved with his family to the United States while an infant. An alumnus of the Juilliard School, Isaac was a character actor 
+            in films for much of the 2000s. After gaining recognition for playing supporting parts in Robin Hood (2010) and Drive (2011), Isaac had his breakthrough 
+            with the eponymous role of a singer in the musical drama Inside Llewyn Davis (2013), which earned him a Golden Globe nomination. He became an international 
+            star with the role of Poe Dameron in the Star Wars sequel trilogy (2015–2019). Isaac was named the best actor of his generation by Vanity Fair in 2017 and
+            one of the 25 greatest actors of the 21st century by The New York Times in 2020. His accolades include a Golden Globe Award, a National Board of Review Award 
+            and an appearance on Time's list of the 100 most influential people in the world in 2016. (Full article...) </div></div>
+        </div>
+        
+        
+        
+            <div class="footer"> footer </div>
+    </div>
+    
+</body>
+</html>
